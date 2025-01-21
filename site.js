@@ -4,31 +4,35 @@ const products = [
     image:
       "https://allagodating.se/wp-content/uploads/2013/04/IMG_7786.jpg",
     price: 25,
+    style: "width: auto; height: 285px"
   },
   {
     name: "Te och Kakor",
     image:
       "https://koala.sh/api/image/v2-bv5kx-l3h2c.jpg?width=1216&height=832&dream",
     price: 20,
+    style: "width: auto; height: 285px"
   },
   {
     name: "Bokhyllan (1 timme)",
     image:
-      "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      "https://www.svtstatic.se/image-news/480/wide/0.5/0.5/e-31022270-1619504157000",
     price: 45,
+    style: "width: auto; height: 285px"
   },
   {
     name: "Bokklubbspaket",
     image:
-      "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      "https://flygvapenmuseum.se/wp-content/uploads/sites/3/2022/01/Bocker-ljud-bild-2048x1286.jpg",
     price: 80,
+    style: "width: auto; height: 285px"
   },
   {
     name: "Bokpresentkort",
     image:
     "pictures/bokhörnan.png",
     price: 50,
-    style: "width: 400; height: 320px;",
+    style: "width: auto; height: 285px",
   }
 ];
 
@@ -79,6 +83,11 @@ function addToCart(name, price) {
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCartCount();
   updateCartDropdown();
+}
+
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  updateCart();
 }
 
 function clearCart() {
