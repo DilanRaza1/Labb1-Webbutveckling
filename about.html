@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om Oss - Bokhörnan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Bokhörnan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Om Oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Tjänster/Produkter</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              id="cartDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart-count" class="badge bg-danger">0</span>
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="cartDropdown"
+              id="cart-dropdown"
+            >
+              <li><h6 class="dropdown-header">Kundvagn</h6></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li id="cart-items"></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <button class="btn btn-danger w-100" onclick="clearCart()">
+                  Rensa Kundvagn
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-center py-5">
+      <h1 class="display-4">Om Oss</h1>
+    </header>
+
+    <main class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Vår Historia</h2>
+          <p>
+            Bokhörnan startade 2020 med en vision att skapa en plats där
+            bokälskare kan träffas, umgås och dela sin kärlek till litteratur.
+            Vi är stolta över att erbjuda ett brett utbud av böcker och en mysig
+            atmosfär där alla känner sig välkomna.
+          </p>
+          <h3>Kontaktuppgifter</h3>
+          <p>Adress: Bokgatan 12, 123 45 Stockholm</p>
+          <p>Telefon: 08-123 456 78</p>
+          <p>Email: info@bokhornan.se</p>
+        </div>
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.307790879535!2d18.07121531609429!3d59.32551818165622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77dd8f5bdf07%3A0xe3a8ee341cc7043!2sStockholm%2C%20Sweden!5e0!3m2!1sen!2sse!4v1633024800000!5m2!1sen!2sse"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>
