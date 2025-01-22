@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bokhörnan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -73,33 +79,142 @@
       </div>
     </nav>
 
-    <header class="text-center py-5">
-      <h1 class="display-4">Välkommen till Bokhörnan</h1>
-      <p class="lead">Din plats för kaffe, böcker och gemenskap</p>
+    <header class="hero-section text-center text-white py-5">
+      <div class="container">
+        <h1 class="display-4">Välkommen till Bokhörnan</h1>
+        <p class="lead">Din plats för kaffe, böcker och gemenskap</p>
+        <a href="services.html" class="btn btn-primary btn-lg"
+          >Utforska vårt utbud</a
+        >
+      </div>
     </header>
 
-    <main class="container my-5">
-      <div class="row">
-        <div class="col-md-6">
-          <img
-            src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-            alt="Book Café Image"
-            class="img-fluid rounded"
-          />
-        </div>
-        <div class="col-md-6">
-          <h2>Välkommen till vår lilla bokvrå</h2>
-          <p>
-            Hos oss kan du njuta av en kopp kaffe eller te medan du försvinner
-            in i en bra bok. Vi har ett brett utbud av böcker för alla åldrar
-            och smaker. Välkommen att sitta ner och slappna av!
-          </p>
-          <a href="services.html" class="btn btn-primary"
-            >Utforska vårt utbud</a
-          >
+    <section class="featured-products py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Våra Rekommenderade Produkter</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://allagodating.se/wp-content/uploads/2013/04/IMG_7786.jpg"
+                alt="Kaffe och Bulle"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kaffe och Bulle</h5>
+                <p class="card-text">25 SEK</p>
+                <button
+                  class="btn btn-primary"
+                  onclick="addToCart('Kaffe och Bulle', 25)"
+                >
+                  Lägg till
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://koala.sh/api/image/v2-bv5kx-l3h2c.jpg?width=1216&height=832&dream"
+                alt="Te och Kakor"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Te och Kakor</h5>
+                <p class="card-text">20 SEK</p>
+                <button
+                  class="btn btn-primary"
+                  onclick="addToCart('Te och Kakor', 20)"
+                >
+                  Lägg till
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://www.svtstatic.se/image-news/480/wide/0.5/0.5/e-31022270-1619504157000"
+                alt="Bokhyllan (1 timme)"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bokhyllan (1 timme)</h5>
+                <p class="card-text">45 SEK</p>
+                <button
+                  class="btn btn-primary"
+                  onclick="addToCart('Bokhyllan (1 timme)', 45)"
+                >
+                  Lägg till
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
+    </section>
+
+    <section class="testimonials py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Vad våra kunder säger</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "Bästa bokcaféet i stan! Mysig atmosfär och underbar kaffe."
+                  </p>
+                  <footer class="blockquote-footer">Anna, Stockholm</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "Perfekt plats att läsa en bok och njuta av en kopp te."
+                  </p>
+                  <footer class="blockquote-footer">Erik, Göteborg</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "Fantastiskt utbud av böcker och bakverk. Rekommenderas
+                    varmt!"
+                  </p>
+                  <footer class="blockquote-footer">Maria, Malmö</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Prenumerera på vårt nyhetsbrev</h2>
+        <form class="text-center">
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Ange din e-postadress"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Prenumerera</button>
+        </form>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="site.js"></script>

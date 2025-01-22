@@ -13,6 +13,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -63,7 +69,7 @@
               <li id="cart-items"></li>
               <li><hr class="dropdown-divider" /></li>
               <li>
-                <button class="btn btn-danger w-100" onclick="clearCart()">
+                <button class="btn btn-danger w-100" onclick="clearCart(event)">
                   Rensa Kundvagn
                 </button>
               </li>
@@ -88,20 +94,20 @@
             atmosfär där alla känner sig välkomna.
           </p>
           <h3>Kontaktuppgifter</h3>
-          <p>Adress: Bokgatan 12, 123 45 Stockholm</p>
+          <p>Adress: Bokgatan 12, 424 42 Gårdsten</p>
           <p>Telefon: 08-123 456 78</p>
           <p>Email: info@bokhornan.se</p>
         </div>
         <div class="col-md-6">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.307790879535!2d18.07121531609429!3d59.32551818165622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77dd8f5bdf07%3A0xe3a8ee341cc7043!2sStockholm%2C%20Sweden!5e0!3m2!1sen!2sse!4v1633024800000!5m2!1sen!2sse"
-            width="100%"
-            height="300"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d531.4646518321014!2d12.031974204809005!3d57.80374911590563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sg%C3%A5rdsten%20centrum!5e0!3m2!1sen!2sse!4v1737568910315!5m2!1sen!2sse"
+            width="600"
+            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
-          >
-          </iframe>
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </main>
